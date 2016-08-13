@@ -1,12 +1,8 @@
 #ifndef MAP_HPP
 #define MAP_HPP
 
+#include "Size.hpp"
 #include "Vector2D.hpp"
-
-struct Size{
-	int x;
-	int y;
-};
 
 class Map{
 
