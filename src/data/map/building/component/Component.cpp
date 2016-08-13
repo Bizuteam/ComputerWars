@@ -1,1 +1,1 @@
-#include "Component.hpp"
+#include <data/map/building/component/Component.hpp>

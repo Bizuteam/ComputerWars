@@ -1,5 +1,11 @@
 CC=g++
-CFLAGS=-Wall -g -std=c++11 -pthread -DDEBUG -g
+
+scriptDir=$(shell pwd)
+objectDir=bin
+srcDir=src
+headDir=headers
+
+CFLAGS=-Wall -g -std=c++11 -pthread -DDEBUG -I$(scriptDir)/$(headDir)
 EFLAGS=
 
 srcExt=.cpp
@@ -10,12 +16,14 @@ launcher=test.out
 scriptDir=$(shell pwd)
 objectDir=bin
 srcDir=src
+headDir=headers
 
 directories=$(shell find $(srcDir) -type d | sed '1d')
+headDirectories=$(shell find $(headDir) -type d | sed '1d')
 
 srcFile=$(foreach dir, $(directories), $(wildcard $(dir)/*$(srcExt)))
 
-headers=$(foreach dir, $(directories), $(wildcard $(scriptDir)/$(dir)/*$(headerExt)))
+headers=$(foreach dir, $(headDirectories), $(wildcard $(scriptDir)/$(dir)/*$(headerExt)))
 
 objects=$(foreach file, $(srcFile:$(srcExt)=.o), $(objectDir)/$(notdir $(file)))
 

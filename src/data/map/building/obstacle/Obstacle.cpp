@@ -1,1 +1,1 @@
-#include "Obstacle.hpp"
+#include <data/map/building/obstacle/Obstacle.hpp>

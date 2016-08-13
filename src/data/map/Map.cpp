@@ -1,4 +1,4 @@
-#include "Map.hpp"
+#include <data/map/Map.hpp>
 
 Map::Map(int sizeX, int sizeY) : Map(sizeX, sizeY, 1, 1){
 
