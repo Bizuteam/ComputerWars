@@ -12,7 +12,7 @@ class Building{
 		Building();
 		Building(Size size);
 
-		Size getSize();
+		Size getSize() const;
 
 		void setSize(Size size);
 };

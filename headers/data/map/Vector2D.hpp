@@ -12,7 +12,7 @@ class Vector2D{
 	public:
 		Vector2D();
 		Vector2D(double x, double y);
-		Vector2D(Vector2D& other);
+		Vector2D(const Vector2D& other);
 
 		double getDistance(Vector2D other) const;
 
@@ -21,7 +21,7 @@ class Vector2D{
 		void setX(double x);
 		void setY(double y);
 		void setVector(double x, double y);
-		void setVector(Vector2D& other);
+		void setVector(const Vector2D& other);
 };
 
 #endif

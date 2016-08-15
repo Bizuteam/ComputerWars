@@ -15,7 +15,7 @@ class Weapon {
 		Weapon(std::string name);
 		Weapon(std::string name, double damage);
 
-		double getDamage();
+		double getDamage() const;
 
 		void setDamage(double damage);
 };

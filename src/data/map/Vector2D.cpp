@@ -6,7 +6,7 @@ Vector2D::Vector2D(double x, double y) {
 	setVector(x, y);
 }
 
-Vector2D::Vector2D(Vector2D& other){
+Vector2D::Vector2D(const Vector2D& other){
 	setVector(other);
 }
 
@@ -37,7 +37,7 @@ void Vector2D::setVector(double x, double y){
 	this->y = y;
 }
 
-void Vector2D::setVector(Vector2D& other){
+void Vector2D::setVector(const Vector2D& other){
 	this->x = other.x;
 	this->y = other.y;
 }

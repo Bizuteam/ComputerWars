@@ -8,7 +8,7 @@ Building::Building(Size size){
 	setSize(size);
 }
 
-Size Building::getSize(){
+Size Building::getSize() const{
 	return this->size;
 }
 

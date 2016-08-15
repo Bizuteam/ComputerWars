@@ -9,7 +9,7 @@ Weapon::Weapon(std::string name, double damage){
 	this->damage = damage;
 }
 
-double Weapon::getDamage(){
+double Weapon::getDamage() const{
 	return this->damage;
 }
 
