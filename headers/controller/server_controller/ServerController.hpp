@@ -1,4 +1,0 @@
-#ifndef SERVER_CONTROLLER_HPP
-#define SERVER_CONTROLLER_HPP
-
-#endif

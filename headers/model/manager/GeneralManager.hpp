@@ -1,4 +1,0 @@
-#ifndef GENERAL_MANAGER_HPP
-#define GENERAL_MANAGER_HPP
-
-#endif

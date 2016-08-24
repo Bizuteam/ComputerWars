@@ -1,4 +1,0 @@
-#ifndef CLIENT_CONTROLLER_HPP
-#define CLIENT_CONTROLLER_HPP
-
-#endif
