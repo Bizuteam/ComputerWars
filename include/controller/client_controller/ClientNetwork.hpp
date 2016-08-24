@@ -1,0 +1,4 @@
+#ifndef CLIENT_NETWORK_HPP
+#define CLIENT_NETWORK_HPP
+
+#endif

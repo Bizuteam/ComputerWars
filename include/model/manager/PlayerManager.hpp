@@ -1,0 +1,4 @@
+#ifndef PLAYER_MANAGER_HPP
+#define PLAYER_MANAGER_HPP
+
+#endif
