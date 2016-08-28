@@ -3,7 +3,7 @@ CC=g++
 scriptDir=$(shell pwd)
 objectDir=bin
 srcDir=src
-headDir=headers
+headDir=include
 
 CFLAGS=-Wall -g -std=c++11 -pthread -DDEBUG -I$(scriptDir)/$(headDir)
 EFLAGS=
@@ -12,11 +12,6 @@ srcExt=.cpp
 headerExt=.hpp
 
 launcher=test.out
-
-scriptDir=$(shell pwd)
-objectDir=bin
-srcDir=src
-headDir=headers
 
 directories=$(shell find $(srcDir) -type d | sed '1d')
 headDirectories=$(shell find $(headDir) -type d | sed '1d')
