@@ -6,7 +6,7 @@ srcDir=src
 headDir=include
 
 CFLAGS=-Wall -g -std=c++11 -pthread -DDEBUG -I$(scriptDir)/$(headDir)
-EFLAGS=
+EFLAGS=-lsfml-graphics -lsfml-window -lsfml-system
 
 srcExt=.cpp
 headerExt=.hpp
