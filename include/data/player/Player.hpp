@@ -3,8 +3,8 @@
 
 class Player{
     private :
-    
+
     public :
 
-}
+};
 #endif
