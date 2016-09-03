@@ -3,19 +3,23 @@
 
 #include <cstdlib>
 #include <SFML/Graphics.hpp>
+#include <iostream>
 
 
 class MapView{
   private:
+    double **map;
+
     sf::RenderWindow *window;
 
     int height, width;
 
-    sf::Texture image;
-    sf::Sprite sprite;
+    sf::Texture environment;
+    sf::Sprite wall;
+    sf::Sprite ground;
 
   public:
-    MapView(int width, int height);
+    MapView(int width, int height, double **map);
 
     ~MapView();
 
