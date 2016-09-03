@@ -7,12 +7,25 @@
 
 class MapView{
   private:
-    //sf::RenderWindow window;
+    sf::RenderWindow *window;
+
+    int height, width;
+
+    sf::Texture image;
+    sf::Sprite sprite;
 
   public:
-    MapView(/*double** map*/);
+    MapView(int width, int height);
 
     ~MapView();
+
+    void displayLoop();
+
+    void close();
+
+    void refresh();
+
+    int loadImage();
 };
 
 #endif //MAP_VIEW_HPP
